@@ -9,7 +9,7 @@ const phoneReducer = (state = initialState, action) => {
         case SELL_PHONE:
             return {
                 ...state,
-                numberOfPhone: state.numberOfPhone -1,
+                numberOfPhone: state.numberOfPhone - action.payload,
 
             }
       
